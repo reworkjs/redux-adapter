@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "main": "../lib/hooks/ServerSideHook",
+  "module": "../es/hooks/ServerSideHook",
+  "es:next": "../es/hooks/ServerSideHook"
+}

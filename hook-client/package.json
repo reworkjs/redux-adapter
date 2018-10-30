@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "main": "../lib/hooks/ClientSideHook",
+  "module": "../es/hooks/ClientSideHook",
+  "es:next": "../es/hooks/ClientSideHook"
+}

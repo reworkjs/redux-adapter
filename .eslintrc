@@ -1,0 +1,6 @@
+{
+  "extends": "@foobarhq/eslint-config",
+  "rules": {
+    "no-underscore-dangle": "off"
+  }
+}

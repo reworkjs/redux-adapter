@@ -1,0 +1,44 @@
+{
+  "name": "@reworkjs/redux",
+  "version": "1.0.0",
+  "description": "Redux Plugin for ReworkJS",
+  "main": "lib/public-api.js",
+  "module": "es/public-api.js",
+  "es:next": "es/public-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "author": "Guylian Cox <guyliancox@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "constant-case": "^2.0.0",
+    "global": "^4.3.2",
+    "redux-immutable-state-invariant": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "redux-saga": "^0.16.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@foobarhq/eslint-config": "^5.0.0",
+    "@reworkjs/babel-preset-reworkjs": "^0.3.0",
+    "babel-plugin-dynamic-import-node": "^2.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "del": "^3.0.0",
+    "eslint": "^5.2.0",
+    "flow-bin": "^0.77.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-watch": "^5.0.1",
+    "react": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  }
+}
