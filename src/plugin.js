@@ -5,8 +5,11 @@ import pkg from '../package';
 
 export default class ReduxPlugin {
 
-  constructor(config) {
-    this.globalStoresDir = config['global-stores'] || null;
+  constructor(params) {
+    const config = params.pluginConfig;
+    const configDir = path.dirname(params.configFile);
+
+    this.globalStoresDir = config['global-stores'] ? path.resolve(configDir, config['global-stores']) : null;
   }
 
   getHooks() {

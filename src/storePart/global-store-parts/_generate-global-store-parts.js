@@ -12,27 +12,27 @@
 const fs = require('fs');
 const path = require('path');
 
-module.exports = async function getGlobalStores() {
+module.exports = function getGlobalStores() {
 
   const plugin = require('../../../lib/plugin').default.instance;
 
   const globalStoresDir = plugin.globalStoresDir;
 
-  let files;
+  let filePromise;
 
   if (globalStoresDir == null) {
-    files = [];
+    filePromise = Promise.resolve([]);
   } else {
-    try {
-      files = (await fs.promises.readdir(globalStoresDir)).map(file => path.join(globalStoresDir, file));
-    } catch (e) {
-      files = [];
-    }
+    filePromise = fs.promises.readdir(globalStoresDir)
+      .catch(() => [])
+      .then(files => files.map(file => path.join(globalStoresDir, file)));
   }
 
-  const importArray = `[${files.map(hookFile => `require(${JSON.stringify(hookFile)})`).join(',')}]`;
+  return filePromise.then(files => {
+    const importArray = `[${files.map(hookFile => `require(${JSON.stringify(hookFile)})`).join(',')}]`;
 
-  return { code: `export default () => ${importArray};` };
+    return { code: `export default () => ${importArray};` };
+  });
 };
 
 // import { getModulesFromWpContext } from '../utils/webpack-utils';
