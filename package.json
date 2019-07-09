@@ -3,8 +3,7 @@
   "version": "1.1.0",
   "description": "Redux Plugin for ReworkJS",
   "main": "lib/public-api.js",
-  "module": "es/public-api.js",
-  "es:next": "es/public-api.js",
+  "browser": "es/public-api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
