@@ -1,6 +1,5 @@
 // @flow
 
-// eslint-disable-next-line import/no-unresolved
 import asyncHooks from 'async_hooks';
 
 export default class ThreadLocalValue {
@@ -8,13 +7,13 @@ export default class ThreadLocalValue {
 
   constructor() {
     const asyncHook = asyncHooks.createHook({
-      init(asyncId, type, triggerAsyncId) {
+      init: (asyncId, type, triggerAsyncId) => {
         const existing = this._values.get(triggerAsyncId);
         if (existing) {
           this._values.set(asyncId, existing);
         }
       },
-      destroy(asyncId) {
+      destroy: asyncId => {
         this._values.delete(asyncId);
       },
     });
