@@ -1,6 +1,6 @@
 {
   "name": "@reworkjs/redux",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Redux Plugin for ReworkJS",
   "main": "lib/public-api.js",
   "browser": "es/public-api.js",

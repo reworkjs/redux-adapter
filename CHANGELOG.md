@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/reworkjs/redux-adapter/compare/v1.2.1...v1.2.2) (2019-08-02)
+
+
+### Bug Fixes
+
+* thread-local-value - fix "cannot read get of undefined" ([4a1d3de](https://github.com/reworkjs/redux-adapter/commit/4a1d3de))
+
+
+
 ### [1.2.1](https://github.com/reworkjs/redux-adapter/compare/v1.2.0...v1.2.1) (2019-08-02)
 
 
