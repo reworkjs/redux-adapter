@@ -70,6 +70,7 @@ export function installReducers(store, reducers = []) {
 
   if (dirty) {
     Object.freeze(registeredReducers);
+    markReducerInstalled(store, registeredReducers);
     store.replaceReducer(combineReducers(registeredReducers));
   }
 }
