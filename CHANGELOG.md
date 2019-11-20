@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/reworkjs/redux-adapter/compare/v2.0.0...v2.0.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* use official getPluginInstance API ([1c5788d](https://github.com/reworkjs/redux-adapter/commit/1c5788d471582c0308f476f758b883d57bdd78ba))
+
 ## [2.0.0](https://github.com/reworkjs/redux-adapter/compare/v1.3.0...v2.0.0) (2019-11-20)
 
 ## [1.3.0](https://github.com/reworkjs/redux-adapter/compare/v1.2.2...v1.3.0) (2019-10-24)
