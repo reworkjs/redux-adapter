@@ -14,7 +14,8 @@ const path = require('path');
 
 module.exports = function getGlobalStores() {
 
-  const plugin = require('../../../lib/plugin').default.instance;
+  const getPluginInstance = require('@reworkjs/core/lib/internals/get-plugins').getPluginInstance;
+  const plugin = getPluginInstance(require('../../../lib/plugin').default);
 
   const globalStoresDir = plugin.globalStoresDir;
 
