@@ -9,7 +9,7 @@ import { Symbols } from './storePart/decorators';
 import loadGlobalStores from './storePart/global-store-parts';
 
 // TODO reinstall debug (only front-end)
-// import debug from '@reworkjs/debug';
+// import debug from '@reworkjs/core/debug';
 // debug.store
 
 const devtools = global.devToolsExtension || (() => noop => noop);

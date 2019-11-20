@@ -6,7 +6,7 @@ const plumber = require('gulp-plumber');
 const babel = require('gulp-babel');
 const del = require('del');
 
-const FRAMEWORK_BABEL_PRESET = `@reworkjs/reworkjs/lib/internals/babel/internal-babel-preset`;
+const FRAMEWORK_BABEL_PRESET = `@reworkjs/core/lib/internals/babel/internal-babel-preset`;
 
 // ====== Lib build ======
 // Transpile to ES5

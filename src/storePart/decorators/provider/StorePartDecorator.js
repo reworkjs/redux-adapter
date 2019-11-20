@@ -3,7 +3,7 @@
 import { createSelector } from 'reselect';
 import constantCase from 'constant-case';
 import { put, takeLatest, all } from 'redux-saga/effects';
-import logger from '@reworkjs/reworkjs/logger';
+import logger from '@reworkjs/core/logger';
 import { mapToObject } from '../../../utils/utils';
 import { Symbols } from '../index';
 import { attemptChangeName, killMethod, replaceMethod } from '../../../utils/method-util';
