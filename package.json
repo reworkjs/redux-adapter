@@ -44,6 +44,6 @@
     "redux": "^4.0.4",
     "redux-saga": "^1.1.1",
     "reselect": "^3.0.1",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   }
 }
